@@ -1,0 +1,98 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pony Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+        }
+        .nav a:hover {
+            color: #ccc;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .pony-image {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .pony-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .pony-info h2 {
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Pony Website</h1>
+    </div>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="main">
+        <img class="pony-image" src="https://via.placeholder.com/400x300" alt="Pony Image">
+        <div class="pony-info">
+            <h2>Pony Information</h2>
+            <p>This is a website about ponies. Ponies are small horses with a gentle nature.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Pony Website</p>
+    </div>
+    <script>
+        // Add event listener to nav links
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault();
+                // Add navigation logic here
+            });
+        });
+    </script>
+</body>
+</html>
+```
